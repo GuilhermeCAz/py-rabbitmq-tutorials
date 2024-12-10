@@ -8,6 +8,13 @@ from rstream import (
     OffsetType,
 )
 
+from streams.t02_offset_tracking.config import (
+    RABBITMQ_HOST,
+    RABBITMQ_PASSWORD,
+    RABBITMQ_STREAM_PORT,
+    RABBITMQ_USERNAME,
+)
+
 STREAM_NAME = 'hello-python-stream'
 STREAM_RETENTION = 5000000000  # 5GB
 
@@ -24,9 +31,10 @@ async def on_message(
 
 async def receive() -> None:
     async with Consumer(
-        host='localhost',
-        username='guest',
-        password='guest',  # noqa: S106
+        RABBITMQ_HOST,
+        port=RABBITMQ_STREAM_PORT,
+        username=RABBITMQ_USERNAME,
+        password=RABBITMQ_PASSWORD,
     ) as consumer:
         await consumer.create_stream(
             STREAM_NAME,
