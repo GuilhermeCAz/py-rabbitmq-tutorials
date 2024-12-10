@@ -11,14 +11,12 @@
    Terminal 1 (receiver):
 
    ```bash
-   cd src/queues/t03_publish_subscribe
    python receive_logs.py
    ```
 
    Terminal 2 (sender):
 
    ```bash
-   cd src/queues/t03_publish_subscribe
    python emit_logs.py
    ```
 

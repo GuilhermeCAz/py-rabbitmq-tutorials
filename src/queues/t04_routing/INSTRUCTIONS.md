@@ -11,14 +11,12 @@
    Terminal 1 (receiver):
 
    ```bash
-   cd src/queues/t04_routing
    python receive_logs_direct.py info warning error
    ```
 
    Terminal 2 (sender):
 
    ```bash
-   cd src/queues/t04_routing
    python emit_log_direct.py error "Run. Run. Or it will explode."
    ```
 

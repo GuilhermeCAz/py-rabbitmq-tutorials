@@ -11,14 +11,12 @@
    Terminal 1 (receiver):
 
    ```bash
-   cd src/queues/t06_rpc
    python rpc_server.py
    ```
 
    Terminal 2 (sender):
 
    ```bash
-   cd src/queues/t06_rpc
    python rpc_client.py
    ```
 

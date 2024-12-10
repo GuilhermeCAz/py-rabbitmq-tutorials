@@ -11,14 +11,12 @@
    Terminal 1 (sender):
 
    ```bash
-   cd src/streams/t00_hello_world
    python send.py
    ```
 
    Terminal 2 (receiver):
 
    ```bash
-   cd src/streams/t00_hello_world
    python receive.py
    ```
 

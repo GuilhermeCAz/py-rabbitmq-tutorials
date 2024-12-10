@@ -11,7 +11,6 @@
    Terminal 1 (receiver):
 
    ```bash
-   cd src/queues/t05_topics
 
    # To receive all the logs run:
    python receive_logs_topic.py "#"
@@ -29,7 +28,6 @@
    Terminal 2 (sender):
 
    ```bash
-   cd src/queues/t05_topics
    # To emit a log with a routing key kern.critical type:
    python emit_log_topic.py "kern.critical" "A critical kernel error"
    ```

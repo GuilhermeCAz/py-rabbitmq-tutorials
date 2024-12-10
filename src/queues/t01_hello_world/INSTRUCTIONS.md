@@ -11,14 +11,12 @@
    Terminal 1 (receiver):
 
    ```bash
-   cd src/queues/t00_hello_world
    python receive.py
    ```
 
    Terminal 2 (sender):
 
    ```bash
-   cd src/queues/t00_hello_world
    python send.py
    ```
 
